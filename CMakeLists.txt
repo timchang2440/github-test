@@ -1,6 +1,6 @@
 cmake_minimum_required ( VERSION 3.0)
 
-project(hello)
+project(gittest)
 
 find_package(OpenCV REQUIRED)
 
