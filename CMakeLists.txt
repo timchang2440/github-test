@@ -12,11 +12,3 @@ aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/output output_src)
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src test_src)
 
 add_executable(${PROJECT_NAME} ${test_src} ${input_src} ${output_src})
-
-
-set(CMAKE_CXX_FLAGS   "-std=c++11")             # c++11
-set(CMAKE_CXX_FLAGS   "-g")                     # debug info
-set(CMAKE_CXX_FLAGS   "-Wall")                  # open warning
-
-set(CMAKE_CXX_FLAGS_DEBUG   "-O0" )             # Debug package is not optimized
-set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG " )   # release potimized
